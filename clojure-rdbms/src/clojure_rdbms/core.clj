@@ -18,6 +18,7 @@
   ({})) ; TODO: update this to retrieve the contents from file
 
 ;; Creates a database with the given name, table, and columns in the table.
+;; If database already exists in the collection, overwrites.
 (defn create-database
   [db_name table_name column_specs]
   (assoc database-collection
@@ -26,6 +27,7 @@
          {})) ; TODO: in memory for now. Will change in the future
 
 ;; Creates the table with the provided name and column specifications
+;; If table already exists in the database, overwrites
 (defn create-table
   [database table_name column_specs]
   (assoc (get database table_name)
