@@ -9,6 +9,7 @@ Roadmap:
 - [ ] Read data from tables w/ basic select
 - [ ] Support numeric type 32-bit binary point column type
 - [ ] Support guidv4 column type
+- [ ] REPL support
 - [ ] WHERE clause support
 - [ ] ORDER BY clause support
 - [ ] INNER JOIN clause support
