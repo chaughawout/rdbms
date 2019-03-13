@@ -1,6 +1,6 @@
 # clojure-rdbms
 
-This is a learning effort to build a sql rdbms using clojure. I'll be exploring the design and implementation of from square one.
+This is a learning effort to build a sql rdbms using clojure. I'll be exploring the design and implementation from square one.
 
 Roadmap:
 
