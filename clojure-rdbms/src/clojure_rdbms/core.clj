@@ -21,10 +21,13 @@
 (defn create-database
   [db_name table_name column_specs]
   (assoc database-collection
-         (create-table table_name column_specs)
-         db_name)) ; TODO: in memory for now. Will change in the future
+         (create-table (get database-collection db_name) table_name column_specs)
+         db_name
+         {})) ; TODO: in memory for now. Will change in the future
 
 ;; Creates the table with the provided name and column specifications
 (defn create-table
-  [table_name column_specs]
-  ()) ; TODO: in memory for now. Will change in the future
+  [database table_name column_specs]
+  (assoc (get database table_name)
+         table_name
+         {:Columns column_specs}) ; TODO: in memory for now. Will change in the future
