@@ -1,6 +1,24 @@
 # clojure-rdbms
 
-FIXME: description
+This is a learning effort to build a sql rdbms using clojure. I'll be exploring the design and implementation of from square one.
+
+Roadmap:
+[ ] In-memory database tables
+[ ] Insert data into tables
+[ ] Read data from tables w/ basic select
+[ ] Support numeric type 32-bit binary point column type
+[ ] Support guidv4 column type
+[ ] WHERE clause support
+[ ] ORDER BY clause support
+[ ] INNER JOIN clause support
+[ ] Delete data from tables
+[ ] Enforce Primary Keys
+[ ] Enforce Foreign Key Constraints
+[ ] Leverage indexes for queries
+[ ] Support clustered and non-clustered indexes
+[ ] Converting SQL into execution plan
+[ ] Executing execution plan
+[ ] Access control support
 
 ## Installation
 
