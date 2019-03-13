@@ -30,4 +30,4 @@
   [database table_name column_specs]
   (assoc (get database table_name)
          table_name
-         {:Columns column_specs}) ; TODO: in memory for now. Will change in the future
+         {:Columns column_specs})) ; TODO: in memory for now. Will change in the future
